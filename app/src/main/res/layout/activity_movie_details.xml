@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0"
+        android:stretchColumns="1"
+        android:layout_margin="5dp"
+        tools:context="com.example.imdbmovieapp.MovieDetailsActivity">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:id="@+id/tv_MovieTitle"
+                android:padding="18dip"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:id="@+id/tv_Country"
+                android:padding="18dip"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="ExtraText"><![CDATA[
+                />
+
+
+
+
+
+                ]]>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/actors"
+                    android:id="@+id/tv_Actorlbl"
+                    android:padding="8dip"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_below="@+id/tv_Directorlbl"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/tv_Director"
+                    android:textSize="14sp"
+                    android:layout_toLeftOf="@+id/tv_Director" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Writer:"
+                    android:id="@+id/tv_Writerlbl"
+                    android:padding="8dip"
+                    android:layout_below="@+id/tv_Actorlbl"
+                    android:layout_alignLeft="@+id/tv_Directorlbl"
+                    android:layout_alignStart="@+id/tv_Directorlbl"
+                    android:layout_toStartOf="@+id/tv_Writer"
+                    android:textSize="14sp"
+                    android:layout_toLeftOf="@+id/tv_Writer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/genre"
+                    android:padding="8dip"
+                    android:id="@+id/tv_genrelbl"
+                    android:layout_below="@+id/tv_awardslbl"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/tv_Director"
+                    android:textSize="14sp"
+                    android:layout_toLeftOf="@+id/tv_Director" />
+
+                <TextView
+                    android:text="Release:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_releaseDatelbl"
+                    android:textSize="14sp"
+                    android:padding="8dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/tv_runtime"
+                    android:layout_toStartOf="@+id/tv_runtime"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/tv_awardslbl"
+                    android:text="Awards:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    tools:ignore="RtlHardcoded"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tv_runtimelbl"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/tv_runtimelbl"
+                    android:layout_alignEnd="@+id/tv_runtimelbl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="@string/writer"
+                    android:id="@+id/tv_Writer"
+                    android:textSize="14sp"
+                    android:layout_alignBaseline="@+id/tv_Writerlbl"
+                    android:layout_alignBottom="@+id/tv_Writerlbl"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignLeft="@+id/tv_Actor"
+                    android:layout_alignStart="@+id/tv_Actor" />
+
+                <TextView
+                    android:text="Release date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_releaseDate"
+                    android:textSize="14sp"
+                    android:layout_alignBaseline="@+id/tv_releaseDatelbl"
+                    android:layout_alignBottom="@+id/tv_releaseDatelbl"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/tv_releaseDatelbl"
+                    android:layout_toEndOf="@+id/tv_releaseDatelbl" />
+
+                <TextView
+                    android:id="@+id/tv_runtimelbl"
+                    android:text="Runtime:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tv_releaseDatelbl"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="Director"
+                    android:id="@+id/tv_Director"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/tv_genrelbl"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/tv_awardslbl"
+                    android:layout_toEndOf="@+id/tv_awardslbl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/director"
+                    android:id="@+id/tv_Directorlbl"
+                    android:padding="8dip"
+                    android:textSize="14sp"
+                    android:layout_alignBaseline="@+id/tv_Director"
+                    android:layout_alignBottom="@+id/tv_Director"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/tv_runtime"
+                    android:text="Runtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    tools:ignore="RtlHardcoded"
+                    android:textSize="14sp"
+                    android:layout_alignBaseline="@+id/tv_runtimelbl"
+                    android:layout_alignBottom="@+id/tv_runtimelbl"
+                    android:layout_toRightOf="@+id/tv_Directorlbl"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/tv_awards"
+                    android:text="Awards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:textSize="14sp"
+                    android:layout_alignBaseline="@+id/tv_awardslbl"
+                    android:layout_alignBottom="@+id/tv_awardslbl"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/tv_awardslbl"
+                    android:layout_toEndOf="@+id/tv_awardslbl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="@string/genre"
+                    android:id="@+id/tv_Genre"
+                    android:textSize="14sp"
+                    android:layout_alignBaseline="@+id/tv_genrelbl"
+                    android:layout_alignBottom="@+id/tv_genrelbl"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/tv_genrelbl"
+                    android:layout_toEndOf="@+id/tv_genrelbl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="@string/actors"
+                    android:id="@+id/tv_Actor"
+                    tools:ignore="RtlHardcoded"
+                    android:textSize="14sp"
+                    android:layout_alignBaseline="@+id/tv_Actorlbl"
+                    android:layout_alignBottom="@+id/tv_Actorlbl"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/tv_Actorlbl"
+                    android:layout_toEndOf="@+id/tv_Actorlbl" />
+
+
+            </RelativeLayout>
+
+            <ImageView android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:id="@+id/iv_MovieImage"
+                android:contentDescription="@string/app_name"
+                android:layout_margin="10dp" />
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_margin="5dp"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:rating="3.8"
+            android:isIndicator="true"
+            android:id="@+id/rbar_rating" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/plot"
+            android:id="@+id/tv_plot" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:id="@+id/tv_MoviePlot" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_Previous"
+            android:layout_marginRight="80dp"
+            android:contentDescription="@string/app_name"
+            android:clickable="true"
+            android:src="@drawable/arrow_left"
+            tools:ignore="RtlHardcoded" />
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/bnt_Finish"
+            android:background="@drawable/shape"
+            android:text="@string/btn_Finish"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:layout_marginLeft="80dp"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/btn_Next"
+            android:src="@drawable/arrow_right"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</LinearLayout>

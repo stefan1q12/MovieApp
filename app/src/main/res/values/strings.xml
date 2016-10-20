@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IMDb Movie App</string>
+    <string name="hint">Find Movies</string>
+    <string name="btn_Search">Search IMDb.com</string>
+    <string name="release_date">Release Date: </string>
+    <string name="genre">Genre: </string>
+    <string name="director">Director: </string>
+    <string name="actors">Actors: </string>
+    <string name="plot">Plots: </string>
+    <string name="btn_Finish">Finish</string>
+    <string name="writer">writer</string>
+</resources>
